@@ -1,0 +1,26 @@
+import java.util.Scanner; 
+class Main {
+  public static void main(String[] args) {
+    
+    // initialize a String
+    String name = "Ivan";
+    // initialize a int
+    int number = 42;
+    // initialize a double
+    double pie = 3.14;
+    // initialize a boolean
+    boolean chinaIsCool = true;
+
+    // make a new scanner to read user input
+    Scanner myScanner = new Scanner(System.in);
+
+    System.out.print("Enter your age: ");
+    String input = myScanner.nextLine();
+
+    // parse a string into an int
+    int age = Integer.parseInt(input);
+    int newAge = age + 5;
+    System.out.println("In 5 years you will be " + newAge + "years old!");
+
+    }
+}
