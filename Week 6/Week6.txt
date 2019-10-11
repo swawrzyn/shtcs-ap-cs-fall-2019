@@ -1,0 +1,79 @@
+class Main {
+  public static void main(String[] args) {
+
+    // Changing variables with ++ and --.
+    int apples = 10;
+    
+    System.out.println("You have " + apples + " apples.");
+    
+    apples++;
+
+    System.out.println("You now have " + apples + " apples.");
+
+    int bananas = 100;
+
+    System.out.println("You have " + bananas + " bananas.");
+
+    bananas--;
+
+    System.out.println("You now have " + bananas + " bananas.");
+
+    // Loops
+    // Review
+    while(true) {
+      System.out.println("This will loop forever unless there is a 'break;'.");
+      break;
+    }
+
+    // Conditional Loops
+
+    int i = 0;
+
+    while (i < 10) {
+      System.out.println("This will print 10 times!");
+      // If you don't put i++ here, you will loop forever and crash your program!
+      i++;
+    }
+
+    // Assignment Operations
+
+    int age = 10;
+
+    // age = age + 10
+    age += 10;
+
+    // age = age - 10
+    age -= 10;
+
+    // age = age * 2
+    age *= 2;
+
+    // age = age / 3
+    age /= 3;
+
+    // age = age % 2
+    age %= 2;
+
+    // calling methods
+    hello();
+    helloName("Zixin");
+    helloNameAge("Ivan", 15);
+  }
+
+  // Simple method
+  public static void hello() {
+    System.out.println("Hello there!");
+  }
+
+  // Method with parameters
+
+  public static void helloName(String name) {
+    System.out.println("Hello " + name + "!");
+  }
+
+  // Method with two parameters
+
+  public static void helloNameAge(String name, int age) {
+    System.out.println("Hello " + name + ". You are " + age + " years old!");
+  }
+}
